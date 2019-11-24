@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yvonne's Resume</title>
-    <linl rel="stylesheet" href="./css/button.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">首頁</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -24,14 +24,14 @@
                     <a class="nav-link" href="#">關於我<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.w3schools.com">自傳</a>
+                    <a class="nav-link" href="#">自傳</a>
                 </li>
 
                 </li>
                 <li class="nav-item">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         專長
-                          </a>
+                    </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">社團經驗<span class="sr-only">(current)</span></a>
@@ -41,7 +41,7 @@
                 </li>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">聯絡我<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#contact">聯絡我<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -51,64 +51,137 @@
         </div>
     </nav>
 
-
-    <div id="carouselExampleSlidesOnly" class="carousel slide w-75 mx-auto my-4" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="./img/cat1.jpg" alt="First slide">
+    <div id="main">
+        <section id="carouselExampleSlidesOnly" class="carousel slide mx-auto my-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container  w-50  mx-auto pb-4" style="background-size: contain;background-repeat: no-repeat;  height: 1024px;">
+                        <div class="text-center mx-auto text-white mt-4">
+                            <h1>關於我</h1>
+                            <h2>校系：國立台灣大學政治學系國際關係組</h2>
+                            <h6>2018-現今</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img class="d-block w-100" alt="Second slide">
+                    <div class="container  w-50  mx-auto pb-4" style="background-size: contain;background-repeat: no-repeat;  height: 1024px;">
+                        <div class="text-center mx-auto text-white mt-4">
+                            <h1>關於我</h1>
+                            <h2>國畫社副社長</h2>
+                            <h6>2019/02-06</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/cat3.jpg" alt="Third slide">
+                    <div class="container  w-50  mx-auto pb-4" style="background-size: contain;background-repeat: no-repeat;  height: 1024px;">
+                        <div class="text-center mx-auto text-white mt-4">
+                            <h1>關於我</h1>
+                            <h2>專長、興趣</h2>
+                            <h6>跳舞、語言、畫圖、寫小說</h6>
+                        </div>
+                    </div>
+                </div>
+                <a href="#carouselExampleSlidesOnly" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></spam>
+                </a>
+                <a href="#carouselExampleSlidesOnly" class="carousel-control-next" data-slide="next">
+                    <apan class="carousel-control-next-icon"></apan>
+                </a>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./img/cat2.jpg" alt="Second slide">
+        </section>
+
+    
+        <section>專長、興趣
+            跳舞
+            多益
+                800分
+            畫圖
+            寫小說
+        </section>
+        <section>
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">社團經驗</p>
+                </div>
+                <div class="card-body">
+                    高中漾舞社、高中有氧舞蹈社、國畫社副社長、現代舞社爵士舞班
+                </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./img/cat3.jpg" alt="Third slide">
+        </section>
+        <section>
+            <h3 class="text-center shadow bg-light">工作經驗</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header">校外工讀</div>
+                        <div class="card-body">
+                            國中小文理補習班
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header">校內工讀</div>
+                        <div class="card-body">
+                            圖書館工讀
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
             </div>
-            <a href="#carouselExampleSlidesOnly" class="carousel-control-prev" data-slide="prev">
-                <span class="carousel-control-prev-icon"></spam>
-            </a>
-            <a href="#carouselExampleSlidesOnly" class="carousel-control-next" data-slide="next">
-                <apan class="carousel-control-next-icon"></apan>
-            </a>
-        </div>
-    </div>
+        </section>
 
-    <div>關於我
-        生日：2000/04/04
-        星座：水瓶座
-        校系：國立台灣大學政治學系國際關係組
-    </div>
-    <div>自傳
-        高中畢業於高雄女中
-    </div>
-    <div>就學經歷
-            高師大附中國小部、高師大附中國中部、高雄女中、台灣大學政治系
-        </div>
-    <div>專長
-        跳舞、繪畫
-    </div>
-    <div>社團經驗
-        高中漾舞社、高中有氧舞蹈社、國畫社副社長、現代舞社爵士舞班
-    </div>
-    <div>工作經驗
-        國中小文理補習班、圖書館工讀
-    </div>
-    <div>聯絡我
-        
-    </div>
+        <section id="contact" style="text-align:center;background-color:#828282;" class="p-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            社群
+                        </div>
+                        <ul class="list-group text-left">
+                            <li class="list-group-item list-group-item-secondary"><a href=""><i
+                                        class="fab fa-facebook-square fa-2x"></i>https://www.facebook.com</a></li>
+                            <li class="list-group-item"><a href=""><i class="fab fa-line fa-2x"></i>LINE:</a></li>
+                            <li class="list-group-item"><a href=""><i
+                                        class="fab fa-instagram  fa-2x"></i>https://www.instagram.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h4 class="text-center">請使用下列表單或直接E-mail寄給我</h4>
+                    <form>
+                        <input class="form-control input-lg " placeholder="您的姓名">
+                        <input class="form-control" type="email" placeholder="E-mail">
+                        <input class="form-control">
+                        <textarea class="form-control"></textarea>
+                        <button class="btn btn-secondary"><i class="fas fa-mail-bulk"></i> 送出</button>
+                    </form>
+                </div>
+            </div>
 
-    <div style="text-align:center;background-color:#828282;" class="p-4">
-        <a href=""><i class="fab fa-facebook-square fa-2x" style="color:#FFFFFB" ></i></a>
-        <a href=""><i class="fab fa-line fa-2x" style="color:#FFFFFB"></i></a>
-        <a href=""><i class="fab fa-instagram  fa-2x" style="color:#FFFFFB"></i></a>
+        </section>
     </div>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+    <script>
+        $(function () {
+            $('#main').onepage_scroll();
+        })
+    </script>
 
 </body>
 
