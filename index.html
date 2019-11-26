@@ -14,22 +14,20 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">首頁</a>
+        <a class="navbar-brand" href="#">蔡依潔 Yvonne</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">關於我<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">自傳</a>
-                </li>
-                <li class="nav-item">
+
+                <li class="nav-item active">
                     <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                        專長
+                        專長＆興趣
                     </a>
                 </li>
                 <li class="nav-item active">
@@ -42,20 +40,15 @@
                     <a class="nav-link" href="#contact">聯絡我<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 
     <div id="main">
-        <section id="carouselExampleSlidesOnly" class="carousel slide mx-auto my-4" data-ride="carousel" style="background-image:url(img/background.jpg)">
-
+        <section id="carouselExampleSlidesOnly" class="carousel slide mx-auto" data-ride="carousel" style="background-image:url(img/background.jpg);background-size:cover;">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="container  w-50  mx-auto pb-4" style="background-size: contain;background-repeat: no-repeat;  height: 1024px;">
-                        <div class="text-center mx-auto  mt-4">
+                    <div class="container  mx-auto" style="margin-top:10%">
+                        <div class="text-center mt-4 mx-auto text-white">
                             <h1>關於我</h1>
                             <h2>校系：國立台灣大學政治學系國際關係組</h2>
                             <h6>2018-現今</h6>
@@ -63,8 +56,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="container  w-50  mx-auto pb-4" style="background-size: contain;background-repeat: no-repeat;  height: 1024px;">
-                        <div class="text-center mx-auto  mt-4">
+                    <div class="container  mx-auto" style="margin-top:10%">
+                        <div class="text-center mt-4 mx-auto ">
                             <h1>關於我</h1>
                             <h2>國畫社副社長</h2>
                             <h6>2019/02-06</h6>
@@ -72,8 +65,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="container  w-50  mx-auto pb-4" style="background-size: contain;background-repeat: no-repeat;  height: 1024px;">
-                        <div class="text-center mx-auto  mt-4">
+                    <div class="container  mx-auto" style="margin-top:10%">
+                        <div class="text-center mt-4 mx-auto ">
                             <h1>關於我</h1>
                             <h2>專長、興趣</h2>
                             <h6>跳舞、語言、畫圖、寫小說</h6>
@@ -89,71 +82,77 @@
             </div>
         </section>
 
-
         <section>
-            <h3 class="text-center shadow bg-light">專長＆興趣</h3>
+            <h3 class="text-center shadow bg-light display-2">專長＆興趣</h3>
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
+                <div class="col-6">
+                    <div class="card w-75 mx-auto" style="min-height: 500px;">
+                        <div class="card-body shadow">
+                            <h3 class="text-center py-2 display-4" style="border-top:2px solid silver;border-bottom:2px solid black "><i class="fas fa-cog fa-spin"></i>專長</h3>
+                            <div class="row mt-4">
+                                <div class="col-4">
+                                    <div class="w-75 mx-auto text-center">
+                                        <span><i class="fas fa-music  fa-3x"></i></span>
+                                        <div>
+                                            <h4 class="font-weight-bold ">跳舞</h4>
+                                            <p>從高中開始，就參加多個學校社團。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="w-75 mx-auto text-center">
+                                        <span><i class="fas fa-language fa-3x"></i></span>
+                                        <div>
+                                            <h4 class="font-weight-bold">語文</h4>
+                                            <p>對於外語有濃厚興趣，參加多益考試，得到800分，也在學校研習第二外文<b>德文</b></p>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="text-center">專長</h3>
-                            <div class="row">
-                                <div class="col-4">
-                                    <span><i class="fas fa-music  fa-2x"></i></span>
-                                    <div>
-                                        跳舞
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <span><i class="fas fa-language fa-2x"></i></span>
-                                    <div>
-                                        多益 800分
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <span><i class="fas fa-palette fa-2x"></i></span>
-                                    <div>
-                                        繪畫
+                                    <div class="w-75 mx-auto text-center">
+                                        <span><i class="fas fa-palette fa-3x"></i></span>
+                                        <div>
+                                            <h4 class="font-weight-bold">繪畫</h4>
+                                            <p></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="text-center">興趣</h3>
+                <div class="col-6">
+                    <div class="card w-75 mx-auto" style="min-height: 500px;">
+                        <div class="card-body shadow">
+                            <h3 class="text-center py-2 display-4" style="border-top:2px solid silver;border-bottom:2px solid black "><i class="fas fa-spinner fa-pulse"></i>興趣</h3>
                             <div class="row">
                                 <div class="col-4">
-                                    <span><i class="fas fa-book-reader"></i></span>
-                                    <div>
-                                        看書
+                                    <div class="w-75 mx-auto text-center">
+                                        <span><i class="fas fa-book-reader fa-3x"></i></span>
+                                        <div>
+                                            <h4 class="font-weight-bold">看書</h4>
+                                            <p></p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <span><i class="fas fa-music"></i></span>
-                                    <div>
-                                        跳舞
+                                    <div class="w-75 mx-auto text-center">
+                                        <span><i class="fas fa-puzzle-piece fa-3x"></i></span>
+                                        <div>
+                                            <h4 class="font-weight-bold">拼圖</h4>
+                                            <p></p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <span><i class="fas fa-paint-brush"></i></span>
-                                    <div>
-                                        繪畫
+                                    <div class="w-75 mx-auto text-center">
+                                        <span><i class="fas fa-feather-alt fa-3x"></i></span>
+                                        <div>
+                                            <h4 class="font-weight-bold">寫小說</h4>
+                                            <p></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4">
-                                    <span><i class="fas fa-feather-alt"></i></span>
-                                    <div>寫小說</div>
-                                </div>
-                                <div class="col-4">
-                                    <span><i class="fas fa-puzzle-piece"></i></span>
-                                    <div>拼圖</div>
                                 </div>
                             </div>
 
