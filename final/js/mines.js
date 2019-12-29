@@ -3,10 +3,12 @@ var Rows = 20; // 方格大小
 var Cells = new Array(Rows); // 記錄每一個格子的內容
 var Timer;
 var TimerNo = 0;
+var MinesDisplayed;
 
 function Initialize() {
-    $('#main').html('')
-    $('#MinesLeft').text(pad(Mines, 3));
+    $('#main').html('');
+    MinesDisplayed = Mines
+    $('#MinesLeft').text(pad(MinesDisplayed, 3));
     clearInterval(Timer);
     TimerNo = 0;
     Timer = setInterval(() => {
@@ -58,9 +60,13 @@ function Initialize() {
                 if (!Cells[X][Y].IsFlag) {
                     Cells[X][Y].IsFlag = true;
                     $('#cell' + X + "_" + Y).html("<i class='fas fa-flag' style='color:blue'></i>")
+                    MinesDisplayed--
+                    $('#MinesLeft').text(pad(MinesDisplayed, 3));
                 } else {
                     Cells[X][Y].IsFlag = false;
                     $('#cell' + X + "_" + Y).html("<label></label>");
+                    MinesDisplayed++
+                    $('#MinesLeft').text(pad(MinesDisplayed, 3));
                 }
 
             } else {
