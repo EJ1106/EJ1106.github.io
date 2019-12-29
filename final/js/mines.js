@@ -62,6 +62,20 @@ function Initialize() {
                     $('#cell' + X + "_" + Y).html("<i class='fas fa-flag' style='color:blue'></i>")
                     MinesDisplayed--
                     $('#MinesLeft').text(pad(MinesDisplayed, 3));
+                    if (MinesDisplayed == 0) {
+                        var IsWin = true;
+                        for (i = 0; i < Rows; i++) {
+                            for (j = 0; j < Rows; j++) {
+                                if (!Cells[i][j].IsOpen && !Cells[i][j].IsFlag)
+                                    IsWin = false;
+                            }
+                        }
+                        if (IsWin) {
+                            alert('Congratualation');
+                            clearInterval(Timer);
+                            $('.cell').off('mousedown');
+                        }
+                    }
                 } else {
                     Cells[X][Y].IsFlag = false;
                     $('#cell' + X + "_" + Y).html("<label></label>");
@@ -132,6 +146,8 @@ function OpenCell(X, Y) {
         }
     }
 }
+
+
 
 $(() => {
     document.addEventListener('contextmenu', event => event.preventDefault()); //讓滑鼠右鍵不要顯示原先的選單
